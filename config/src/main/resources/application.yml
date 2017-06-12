@@ -1,5 +1,10 @@
 spring:
   cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9901
+          zk-nodes: localhost:2182
     config:
       server:
         git:
@@ -11,3 +16,4 @@ server:
 security:
   user:
     password: SpingCloudConfiguration
+
