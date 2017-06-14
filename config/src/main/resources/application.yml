@@ -1,14 +1,22 @@
 spring:
   cloud:
-    stream:
-      kafka:
-        binder:
-          brokers: localhost:9901
-          zk-nodes: localhost:2182
+    bus:
+      enabled: true
+#    stream:
+#      kafka:
+#        binder:
+#          brokers: 10.28.71.112:9902
+#          zk-nodes: 10.28.71.112:2181
     config:
       server:
         git:
           uri: https://github.com/bluecitymoon/cloud-conf.git
+  rabbitmq:
+    host: fish.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: ubrmbytk
+    username: ubrmbytk
+    password: mJ_GZNtjGfaG1VsV91s52vXMFGjITEbQ
 
 server:
   port: 9999
@@ -16,4 +24,3 @@ server:
 security:
   user:
     password: SpingCloudConfiguration
-
