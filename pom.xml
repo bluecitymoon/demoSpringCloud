@@ -12,6 +12,7 @@
 		<module>config</module>
 		<module>registry</module>
 		<module>servicejerry</module>
+		<module>servicegrimm</module>
 	</modules>
 
 </project>

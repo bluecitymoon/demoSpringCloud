@@ -1,0 +1,3 @@
+server:
+  context-path: /grimm
+  port: 7001
