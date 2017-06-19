@@ -1,22 +1,32 @@
 spring:
   cloud:
-    bus:
-      enabled: true
+    config:
+      server:
+        native:
+          search-locations: file:/Users/Jerry/Documents/workspace/demoSpringCloud/config/src/main/resources/shard
+  profiles:
+     active: native
+  application:
+    name: config
+#    bus:
+#      enabled: true
 #    stream:
 #      kafka:
 #        binder:
 #          brokers: 10.28.71.112:9902
 #          zk-nodes: 10.28.71.112:2181
-    config:
-      server:
-        git:
-          uri: https://github.com/bluecitymoon/cloud-conf.git
-  rabbitmq:
-    host: fish.rmq.cloudamqp.com
-    port: 5672
-    virtual-host: ubrmbytk
-    username: ubrmbytk
-    password: mJ_GZNtjGfaG1VsV91s52vXMFGjITEbQ
+#    config:
+#      server:
+#        git:
+#          uri: https://github.com/bluecitymoon/cloud-conf.git
+
+
+#  rabbitmq:
+#    host: fish.rmq.cloudamqp.com
+#    port: 5672
+#    virtual-host: ubrmbytk
+#    username: ubrmbytk
+#    password: mJ_GZNtjGfaG1VsV91s52vXMFGjITEbQ
 
 server:
   port: 9999
