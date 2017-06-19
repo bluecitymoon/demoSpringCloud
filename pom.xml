@@ -13,6 +13,7 @@
 		<module>registry</module>
 		<module>servicejerry</module>
 		<module>servicegrimm</module>
+		<module>gateway</module>
 	</modules>
 
 </project>
