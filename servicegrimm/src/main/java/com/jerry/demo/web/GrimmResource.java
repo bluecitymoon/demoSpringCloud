@@ -1,6 +1,6 @@
-package com.jerry.registry.web;
+package com.jerry.demo.web;
 
-import com.jerry.registry.client.JerryClient;
+import com.jerry.demo.client.JerryClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;

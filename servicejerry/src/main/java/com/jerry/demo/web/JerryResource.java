@@ -1,4 +1,4 @@
-package com.jerry.registry.web;
+package com.jerry.demo.web;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
